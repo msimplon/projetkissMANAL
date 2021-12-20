@@ -1,0 +1,64 @@
+/* FICHIER DEDIE AU STYLE DU FORMULAIRE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: medium 500px;
+}
+
+hr{
+    margin-left: 20px;
+    border-style: solid;
+    border-color: red;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding:  0;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium 500px;
+}
+
+#checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px; 
+    }
+
+input{
+    display: flex;
+    margin-bottom: 5%;
+    height: 30px;
+    width: 80%;
+    border-style: solid;
+    border-color: black;
+}   
+
+button {
+    height: 30px;
+    width: 80%;
+    border-style: outset;
+    border-color: black;
+}
+
+@media only screen and (max-width: 700px) {
+
+h1 {
+    color: blue;
+    fon
+    }
+
+form {
+    width: 100%;}
+
+}

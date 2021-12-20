@@ -1,0 +1,89 @@
+/* FICHIER DEDIE AUX HEADER ET FOOTER */
+body { 
+    width: 80%;
+    margin-left: 10%;
+
+}
+    
+header {
+    display: flex;
+  justify-content: flex-start;
+  font-family: 'Roboto', sans-serif;
+    font-size: medium 300;
+
+}
+
+.logo img {
+    height: auto;
+    width: 100%;
+}
+header nav:last-of-type {
+    margin-right: 0;
+    margin-left: auto;
+    
+  
+}
+header ul, footer ul{
+    display: flex;
+    color: black;
+    
+}
+
+header li::after {
+    content: "|";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header li:last-of-type::after {
+    content: initial;
+}
+
+header ul, footer ul {
+    list-style-type: none;
+}
+
+/*footer {
+    display: flex;
+    justify-content: flex-end;
+}*/
+
+footer nav {
+    margin-right: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium 300;
+}
+
+footer ul {
+    flex-direction: column;
+}
+
+#container{
+    display: flex;
+    margin-top: 0;  
+}
+
+
+p {
+    text-align: center;
+}a
+{
+    color: black; /* Les liens seront en noir au lieu de bleu */
+}
+
+a:hover
+{
+color: red
+}
+
+/* condition : pour tous les écrans qui ont une taille inférieure ou = à  700px 
+pb au niveau du header mes nav de la droite se place les uns en dessous des autres 
+*/
+
+@media only screen and (max-width: 704px) {
+    header nav ul {
+        flex-direction: column;
+        width: 80%;
+    }
+
+}
